@@ -1,0 +1,60 @@
+Created process:
+1.Sign in
+2. click on the icon Exercises- //div[@class='col'][normalize-space()='Exercises']
+3. click on [+New exercise] btn - //span[@class='text-white']
+4. input the name - //input[@placeholder='Exercise name']
+5. click on [Add notes] btn - //div[@class='intervals row wrap items-center justify-start q-gutter-md']//div[1]
+6. select note - //body/div/div[@role='dialog']/div[@class='q-dialog__inner flex no-pointer-events q-dialog__inner--minimized q-dialog__inner--standard fixed-full flex-center']/div[@class='bg-primary']/div[@class='text-black']/div[@class='q-py-md']/div[@class='q-pb-sm']/div[@class='piano row no-wrap overflow-auto']/div[1]/div[1]/div[1]
+7. savePattern btn   - //button[@class='app-btn secondary medium text-']//div[@class='app-btn__content'][normalize-space()='Save']
+8. saveExercise btn - //div[@class='app-btn__content'][normalize-space()='Save']
+
+Deleted process:
+1. sign in
+2. create exercise, remember the name (ex1)
+3. type the name into //input[@aria-label='Search']
+4. make sure that there is your exercise - //h6[normalize-space()='ex1']
+5. click om more option btn - //div[@class='col text-right']//span[@class='q-btn__content text-center col items-center q-anchor--skip justify-center row']
+6. click on Delete btn - //div[contains(text(),'Delete')]
+7. Alert Exercise deleted!
+
+Edited process:
+1. sign in
+2. create exercise, remember the name (ex1)
+3. type the name into //input[@aria-label='Search']
+4. make sure that there is your exercise - //h6[normalize-space()='ex1']
+5. click om more option btn - //div[@class='col text-right']//span[@class='q-btn__content text-center col items-center q-anchor--skip justify-center row']
+6. click on Edit btn - //div[contains(text(),'Edit')]
+7. click on Change btn - //div[normalize-space()='Change']
+8. click on a note btn - //div[@class='text-black']//div[2]//div[1]//div[2]
+9. click on savePattern btn
+10 saveExercise btn
+11. Alert : Saved!
+
+Share process:
+1. sign in
+2. create exercise, remember the name (ex1)
+3. type the name into //input[@aria-label='Search']
+4. make sure that there is your exercise - //h6[normalize-space()='ex1']
+5. click om more option btn - //div[@class='col text-right']//span[@class='q-btn__content text-center col items-center q-anchor--skip justify-center row']
+6. click on Share btn - //div[contains(text(),'Share')]
+
+11. Alert : Coming soon!
+
+Duplicate process:
+1. sign in
+2. create exercise, remember the name (ex1)
+3. type the name into //input[@aria-label='Search']
+4. make sure that there is your exercise - //h6[normalize-space()='ex1']
+5. click om more option btn - //div[@class='col text-right']//span[@class='q-btn__content text-center col items-center q-anchor--skip justify-center row']
+6. clik on Duplicate btn - //div[contains(text(),'Duplicate')]
+7. Make sure that duplicate Exercise is created  - //h6[normalize-space()='ex1 (copy)']
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,11 @@
+1.open https://la-vocal.melodic-mind.com/
+2.click on Sign in/up btn  - //span[normalize-space()='Sign in/up']
+3. click on Continue with Email btn -  //span[contains(text(),'Continue with Email')]
+4. input into //input[@aria-label='Email']
+5. input into //input[@aria-label='Password']
+6. click on //div[contains(text(),'Sign in')]
+7. check that user was sign in  Ready to sing -//p[@class='text-center q-mt-lg text-subtitle1']
+
+logout
+click on //div[contains(text(),'Logout')]
+are you sure yes //div[@class='app-btn__content'][normalize-space()='Yes']

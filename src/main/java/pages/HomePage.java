@@ -12,7 +12,8 @@ public class HomePage extends PageHelper {
     public HomePage(WebDriver driver) {
         super(driver);
     }
-
+    @FindBy(xpath = "//span[normalize-space()='Sign in/up']")
+    WebElement signInBtn;
     @FindBy(xpath = "//span[contains(text(),'Continue with Email')]")
     WebElement continueWithEmailBtn;
     @FindBy(xpath = "//div[@role='listitem']//div[@class='q-focus-helper']")
@@ -23,9 +24,10 @@ public class HomePage extends PageHelper {
     WebElement inputEmail;
     @FindBy(xpath = "//input[@aria-label='Password']")
     WebElement inputPassword;
-    @FindBy(xpath = "//button[@class='app-btn primary medium text-black']//div[1]")
-    WebElement submitBnt;
+    @FindBy(css = "button[class='app-btn primary medium text- q-mt-md full-width'] div[class='app-btn__content']")
+    WebElement signIn;
     @FindBy(xpath = "//i[normalize-space()='person']")
+
     WebElement yourProfileBnt;
     // @FindBy(css = "div[class='main-btns row'] div:nth-child(1) button:nth-child(1) div:nth-child(2) div:nth-child(1)")
     @FindBy(linkText = "//div[@class='col'][normalize-space()='Exercises']")
@@ -37,6 +39,9 @@ public class HomePage extends PageHelper {
         this.browser = browser;
     }*/
 
+    public void signInBtn(){
+        click(signInBtn,5);
+    }
     public void clickOnContinueWithEmail() {
         click(continueWithEmailBtn,3);
 
@@ -54,8 +59,8 @@ public class HomePage extends PageHelper {
         type(inputEmail, user.getEmail(), 2);
         type(inputPassword, user.getPassword(),2);
     }
-    public void submitBtn(){
-        click(submitBnt,5);
+    public void signIn(){
+        click(signIn,10);
         //logger.info("user signed in");
     }
 
@@ -72,6 +77,6 @@ public class HomePage extends PageHelper {
      }*/
     public void clickOnExerciseIcon(){
         //waitUntilElementVisible(exercisesIcon,8);
-        click(exercisesIcon,8);
+        click(exercisesIcon,10);
     }
 }

@@ -17,7 +17,7 @@ public class DataProviderForLogin {
     public Iterator<Object[]> DpFile_loginPositiveTest() throws IOException {
         List<Object[]> list = new ArrayList<>();
         BufferedReader reader = new BufferedReader(new FileReader(new File(
-                "src/test/resources/dataForLogin/data_LoginPositiveTest.csv")));
+                "src/test/resources/login_positiveTest.csv")));
         String line = reader.readLine();
         while (line!=null){
             String split[] = line.split(",");

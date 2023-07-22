@@ -16,7 +16,7 @@ public class CreateNewExerciseTests extends TestBase {
     int i = new Random().nextInt(1000) + 1000;
     String exerciseName;
 
- /*  @BeforeMethod
+ @BeforeMethod
     public void preCondition() {
         homePage = PageFactory.initElements(driver, HomePage.class);
         homePage.clickOnContinueWithEmail();
@@ -25,8 +25,8 @@ public class CreateNewExerciseTests extends TestBase {
                 .email("petrkislansky@gmail.com")
                 .password("Test123456&")
                 .build());
-        homePage.submitBtn();
-    }*/
+        homePage.signIn();
+    }
 
 
     @Test

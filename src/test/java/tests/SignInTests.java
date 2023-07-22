@@ -12,6 +12,8 @@ public class SignInTests extends TestBase {
     @BeforeMethod
     public void pageInit(){
         homePage = PageFactory.initElements(driver, HomePage.class);
+        homePage.signInBtn();
+
         homePage.clickOnContinueWithEmail();
 
     }
@@ -21,19 +23,17 @@ public class SignInTests extends TestBase {
                 .email("petrkislansky@gmail.com")
                 .password("Test123456&")
                 .build());
-        homePage.submitBtn();
+        homePage.signIn();
         homePage.isMyProfileVisible();
 
     }
- /*   @Test
+  /*  @Test
     public void login(){
-        String email = "";
+        String email = "petrkislansky@gmail.com";
         String password = "Test123456&";
         homePage.fillSignInForm(email, password);
-        homePage.submitBtn();
+        homePage.signIn();
         homePage.isMyProfileVisible();
-
-
     }*/
 
 

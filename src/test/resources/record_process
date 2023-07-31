@@ -1,8 +1,0 @@
-1. signed in user open https://la-vocal.melodic-mind.com/
-2.click on [Record] btn - //button[@class='app-btn primary medium text-']
-3.click on [Stop] btn - button[class='app-btn secondary medium text-white text-weight-bold text-body1 bg-dark']
-4. click on [Save] btn - button[class='app-btn secondary medium text-']
-5. type Recording name  - //input[@aria-label='Recording name']
-facultatively: click on NewTag  - //div[@class='app-btn__content'][normalize-space()='New tag'] and type tagName
-6. click on [Save]btn - //body[1]/div[4]/div[1]/div[2]/div[1]/div[2]/div[1]/div[3]/button[1]
-

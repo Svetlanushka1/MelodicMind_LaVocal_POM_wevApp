@@ -1,0 +1,15 @@
+oreCondition
+1. authorized user open home page https://la-vocal.melodic-mind.com/
+Steps:
+2. click on SongsIcon - //div[@class='col'][normalize-space()='Songs']
+3. click on [+NewSong] btn - //button[@class='app-btn outlined small text-']
+4. type song url (https://www.youtube.com/watch?v=WFyfvvfUDBk)
+5.click on [Add] btn - //div[@class='app-btn__content'][normalize-space()='Add']
+
+**  before add section user can click on [Play] btn - //span[@class='text-weight-bold text-body1']
+    or [Restart] btn - //button[@class='app-btn secondary medium text- bg-dark']//div[@class='app-btn__content'] **
+
+6. click on [Add section] btn - //button[@class='app-btn outlined small text-']//div[@class='app-btn__content'] and [pusk] - //div[@class='song-section-card song-section-card-active']//button[1]//span[2]
+7. Menu btn - home btn  save - //div[normalize-space()='Save']
+
+

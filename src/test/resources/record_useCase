@@ -1,0 +1,47 @@
+PreCondition:
+1.Registered User open https://la-vocal.melodic-mind.com/
+--The System open app
+Steps:
+2.The User click on [Record] btn - //button[@class='app-btn primary medium text-']
+--The System starts to record sounds
+3. The User click on [Pause] btn  - //button[@class='app-btn primary medium text-']//div[@class='app-btn__content']
+-- The System pause the record
+4 the user click on [Resume] btn - //button[@class='app-btn primary medium text-']
+--The System continue record
+5.The User click on [Stop] btn - button[class='app-btn secondary medium text-white text-weight-bold text-body1 bg-dark']
+--The System stop record
+6. The user click on [Save] btn - button[class='app-btn secondary medium text-']
+* or [New] btn  - //button[@class='app-btn primary medium text-']*
+-- The System displays form to select [Tag?] - //span[@class='row items-center justify-center underline-black']
+ or create [New tag+] -  //div[@class='app-btn__content'][normalize-space()='New tag']
+ and type the recording name - //input[@aria-label='Recording name']
+7. The User click select form the list od existed tags  - //div[@class='q-focus-helper']'
+or click on [NewTag+] btn  - //div[@class='app-btn__content'][normalize-space()='New tag']
+and type tagName - //input[@aria-label='Tag name']
+-- the System offer the record nname "the tagName + index'  //input[@aria-label='Recording name']
+8. The user click type his recording name - //input[@aria-label='Recording name']
+or just click on [Save] bnt  - //body/div/div[@role='dialog']/div[@class='q-dialog__inner flex no-pointer-events q-dialog__inner--minimized q-dialog__inner--standard fixed-full flex-center']/div[@class='bg-primary']/div[@class='text-black']/div[@class='text-center text-black']/div[@class='q-py-sm']/button[1]
+--The System save record
+
+PostConditon
+9. The user click on return btn  - //a[@aria-label='Back']//span[@class='q-btn__content text-center col items-center q-anchor--skip justify-center row']
+-- The system return user to the Recorder page where displays all Users recordings
+10. The User can select one of them - //div[@class='filter']
+and click on [Play/Stop] btn - css: div[class='col-3 text-center'] span[class='q-btn__content text-center col items-center q-anchor--skip justify-center row']
+* or click [More option]   - //div[@class='options']//span[@class='q-btn__content text-center col items-center q-anchor--skip justify-center row']
+chose  one of options:
+ a) User select 'Rename' option - //div[contains(text(),'Rename')]
+-- the System displays the form of rename recording
+ The user type new name and click on [save] btn.
+ --The System displays list of all users recording with renamed recording.
+ b) User select 'Edit tage' option //div[contains(text(),'Edit tag')]
+ --The System display the form of edit tag.
+  The user type new name of tag and click on [save] btn.
+  --The System displays list of all users recording with renamed tag recording.
+ c) User select 'Share' option - //div[contains(text(),'Share')]
+ --The System offers the user to choose the ways of shearing
+ d) User select 'Download' option - //div[contains(text(),'Share')]
+ --The System download the recording on the computer.
+ f)User select 'Delete' option - //div[contains(text(),'Delete')] - Recording deleted!
+ --The System delete this recoding and displays the Alert 'Recording deleted!'
+

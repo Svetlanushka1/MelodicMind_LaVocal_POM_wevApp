@@ -1,12 +1,13 @@
 package pages;
 
 import helpers.PageHelper;
+import interfaces.HomePageElements;
 import models.UserModel;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
-public class HomePage extends PageHelper {
+public class HomePage extends PageHelper implements HomePageElements {
     // Logger logger = LoggerFactory.getLogger(HomePage.class);
 
     public HomePage(WebDriver driver) {

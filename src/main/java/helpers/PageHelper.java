@@ -20,6 +20,10 @@ public class PageHelper {
 
     @FindBy(xpath = "//div[@id='nav-icon']")
     WebElement dropDown;
+    @FindBy(xpath = "//")
+    WebElement messageText;
+    @FindBy(xpath = "//")
+    WebElement  yesButton;
 
     protected HomePage clickDropDown(){
         click(dropDown, 5);
@@ -54,6 +58,11 @@ public class PageHelper {
         waitUntilElementClickable(element, time);
         element.click();
     }
+    public void clickWithoutWaiting(WebElement element){
+        element.click();
+        //element.isSelected();
+
+    }
 
     public void type(WebElement element, String text, int time){
         click(element, time);
@@ -61,6 +70,8 @@ public class PageHelper {
         element.sendKeys(Keys.DELETE);
         element.sendKeys(text);
     }
+
+
 
     public boolean isElementVisible(WebElement element, int time) {
         try {
@@ -71,6 +82,21 @@ public class PageHelper {
             return false;
         }
     }
+  /*  public boolean isErrorMessageTest(String message) {
+
+        should(messageText, 5);
+        if (messageText.getText().equals(message)) {
+            yesButton.click();
+            pause(1000);
+            driver.navigate().back();
+            return true;
+        }
+        return false;
+    }
+    public void should(WebElement element, int time){
+        new WebDriverWait(driver,time)
+                .until(ExpectedConditions.visibilityOf(element));
+    }*/
 }
 
 

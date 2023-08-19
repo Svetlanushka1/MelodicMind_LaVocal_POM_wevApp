@@ -34,7 +34,7 @@ public class ExercisesPage extends PageHelper {
     WebElement majorTriadScroll;
     @FindBy(css = "body > div:nth-child(7) > div:nth-child(1) > div:nth-child(2) > div:nth-child(1) > div:nth-child(2) > div:nth-child(1) > div:nth-child(3) > div:nth-child(1) > div:nth-child(3)")
     WebElement selectTrio;
-    @FindBy(xpath = "//div[@role='menu']")
+    @FindBy(xpath = "//div[@role='accountToolBar']")
     WebElement triadMenu;
     @FindBy(xpath = "//div[contains(text(),'Perfect Fifth')]")
     WebElement perfectFifth;
@@ -44,7 +44,7 @@ public class ExercisesPage extends PageHelper {
     WebElement majorTriad;
 
     //@FindBy(css = "body > div:nth-child(7) > div:nth-child(1) > div:nth-child(1) > div:nth-child(2) > div:nth-child(2) > div:nth-child(1)")
-    @FindBy(xpath = "//body/div/div[@role='menu']/div[@class='q-list q-list--dark']/div[1]")
+    @FindBy(xpath = "//body/div/div[@role='accountToolBar']/div[@class='q-list q-list--dark']/div[1]")
     WebElement unison;
     ////////////////////////////////////////////////////////////////////////////////////////////////
     @FindBy(xpath = "//div[@class='harmony']//div//span[@class='q-btn__content text-center col items-center q-anchor--skip justify-center row']")

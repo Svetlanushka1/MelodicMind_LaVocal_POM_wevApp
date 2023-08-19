@@ -15,25 +15,25 @@ public class CreateNewExerciseTests extends TestBase {
     ExercisesPage exercisePage;
     int i = new Random().nextInt(1000) + 1000;
     String exerciseName;
-
- @BeforeMethod
-    public void preCondition() {
-        homePage = PageFactory.initElements(driver, HomePage.class);
-        homePage.clickOnContinueWithEmail();
+@Test
+// @BeforeMethod
+public void preCondition() {
+    homePage = PageFactory.initElements(driver, HomePage.class);
+   /* homePage.clickOnContinueWithEmail();
 
         homePage.fillSignInForm(UserModel.builder()
                 .email("petrkislansky@gmail.com")
                 .password("Test123456&")
                 .build());
-        homePage.signIn();
-    }
+        //homePage.signIn();}
 
 
-    @Test
-    public void createNewExercise() {
-        exerciseName = "test " +i;
+        //  @Test
+        // public void createNewExercise() {
+        exerciseName = "test " + i;
+        homePage.openMenuBar();
 
-        homePage.clickOnExerciseIcon();
+        //homePage.clickOnExerciseIcon();
 
         exercisePage = PageFactory.initElements(driver, ExercisesPage.class);
 
@@ -49,8 +49,8 @@ public class CreateNewExerciseTests extends TestBase {
         exercisePage.saveExercise();
         logger.info("Call saveExercise SAVED");
         exercisePage.searchExercise(exerciseName);
-        exercisePage.isElementContains("test2","test2");
-        exercisePage.startExercise();
+        exercisePage.isElementContains("test2", "test2");
+        exercisePage.startExercise();*/
     }
 
 

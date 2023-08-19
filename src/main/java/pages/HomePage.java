@@ -102,17 +102,15 @@ public class HomePage extends PageHelper implements HomePageElements {
         //waitUntilElementVisible(exercisesIcon,8);
         click(exercisesIcon, 10);
     }
-
-
     //// log out ////
     public void openProfileToolbar() {
         click(profileToolBar, 10);
-
     }
 
-    public void logOut() {
-        openProfileToolbar();
-        click(logoutBtn, 2);
+    public void clickOnLogOutBtn() {
+         click(logoutBtn, 2);
+    }
+    public void logoutYes(){
         //alert :  Are you sure?  - yesBtn = //div[@class='app-btn__content'][normalize-space()='Yes']
         click(logoutYes, 3);
     }

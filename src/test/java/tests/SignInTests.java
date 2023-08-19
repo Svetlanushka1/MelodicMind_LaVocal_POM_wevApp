@@ -34,6 +34,13 @@ public class SignInTests extends TestBase {
 
 
     }
+    @Test
+    public void logout(){
+        homePage.openProfileToolbar();
+        homePage.clickOnLogOutBtn();
+        homePage.logoutYes();
+
+    }
 
 }
 
